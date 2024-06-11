@@ -18,7 +18,7 @@
 
 ## Mutability of List
 
-* appending() -> adding single element/object element at end list
+* append() -> adding single element/object element at end list
 ```python
 
     list_one = ["yash" , 23 , "Naruto" , "Iron Man"]
@@ -54,12 +54,13 @@
 ```
 
 * remove(int ele) => remove element from the list
+    - if element is not present on list Error occurs
+
 ``` python
     list_a = ['Yash', 'GEHU', 23, True, 'Hulk', 'Iron Man']
     list_a.remove(True)
     print(list_a) # ['Yash', 'GEHU', 23, 'Hulk', 'Iron Man']
 ```
-    - if element is not present on list Error occurs
 
 
 
