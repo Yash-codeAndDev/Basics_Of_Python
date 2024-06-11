@@ -15,3 +15,28 @@
     tuple_two = ("Iron Man" , 2013 , "Thor")    
     list_two = list( tuple_two)
 ```
+
+## Mutability of List
+
+* appending() -> adding single element/object element to list
+```python
+
+    list_one = ["yash" , 23 , "Naruto" , "Iron Man"]
+    list_one.append("Thor")
+    print(list_one) # ["yash" , 23 , "Naruto" , "Iron Man", "Thor"]
+
+    list_one.append(["America" , "India", France])
+    print(list_one) # ['yash', 23, 'Naruto', 'Iron Man', 'Thor', ['America', 'India', 2020]]
+ 
+```
+
+* extend() -> adding multiple elements to list
+```python
+    
+    list_a = ["Yash" , 23 , True]
+    print(list_a)
+
+    list_a.extend(("Iron Man", "Thor", 2020)) # Covnert Ittrable to list components
+    print(list_a)
+    
+```
