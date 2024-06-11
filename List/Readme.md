@@ -53,7 +53,7 @@
     print(list_a)
 ```
 
-* remove(int ele) => remove element from the list
+* remove(int ele) -> remove element from the list
     - if element is not present on list Error occurs
 
 ``` python
@@ -62,5 +62,17 @@
     print(list_a) # ['Yash', 'GEHU', 23, 'Hulk', 'Iron Man']
 ```
 
+* pop(int index) ->  remove and return an element from the list, but by default it removes only the last element of the list
+
+``` python
+
+    list_a = ['Yash', 'GEHU', 23, True, 'Hulk', 'Iron Man']
+    removed_element = list_a.pop()
+    print("removed_element : {} , -> new list {}".format(removed_element, list_a)) # By default remove last element
+
+    remover_element = list_a.pop(1) # remove element at index 1
+    print(list_a)   
+    
+```
 
 
