@@ -18,7 +18,7 @@
 
 ## Mutability of List
 
-* appending() -> adding single element/object element to list
+* appending() -> adding single element/object element at end list
 ```python
 
     list_one = ["yash" , 23 , "Naruto" , "Iron Man"]
@@ -30,7 +30,7 @@
  
 ```
 
-* extend() -> adding multiple elements to list
+* extend() -> adding multiple elements at end of list
 ```python
     
     list_a = ["Yash" , 23 , True]
@@ -38,5 +38,28 @@
 
     list_a.extend(("Iron Man", "Thor", 2020)) # Covnert Ittrable to list components
     print(list_a)
-    
+
 ```
+
+* insert(int pos, int ele) -> adding element at given position in list
+```python
+    list_a = ["Yash" , 23 , True]
+    print(list_a)
+
+    list_a.insert(1,"GEHU")
+    print(list_a)
+
+    list_a.insert(5,"Iron Man") # insert at end of list by default
+    print(list_a)
+```
+
+* remove(int ele) => remove element from the list
+``` python
+    list_a = ['Yash', 'GEHU', 23, True, 'Hulk', 'Iron Man']
+    list_a.remove(True)
+    print(list_a) # ['Yash', 'GEHU', 23, 'Hulk', 'Iron Man']
+```
+    - if element is not present on list Error occurs
+
+
+
