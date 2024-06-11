@@ -118,8 +118,8 @@
 
 ```
 >[!Note]
-- copy() creates shallow copy i.e in case of nested objects it copy reference of object
-- deepcopy() is used to created when we need to ensure complete independence between original and copy in case of nested list
+>- copy() creates shallow copy i.e in case of nested objects it copy reference of object
+>- deepcopy() is used to created when we need to ensure complete independence between original and copy in case of nested list
 - ```python
     import copy
     list_a = [1, 2, 3, 4, 5, 6 ,[ 7, 8, 9]]
