@@ -75,4 +75,58 @@
     
 ```
 
+## Some commom functions performed on List
+
+* index(int element) -> find first occurrence index of element if exist else give error
+
+```python
+    list_a = ['Yash', 'GEHU', 23, True,'GEHU', 'Hulk', 'Iron Man']
+    print(list_a.index("GEHU")) # 2
+    print(list_a.index(1)) # 3 -> 1 in python is Equivalent to True therefore output is 3
+
+```
+
+* count(int element) -> returns frequency of element in list
+
+```python
+
+    list_a = [1 , 2, 3, 4, 4, 2, 2, 7, 9]
+    print(list_a.count(2)) # 3
+    print(list_a.count(12)) # 0
+```
+
+*  copy() -> returns shallow copy of list 
+```python
+    
+    list_a = ['Yash',23, True,'GEHU', 'Hulk', 'Iron Man']
+
+    list_b = list_a.copy()
+    print(list_b) #  ['Yash',23, True,'GEHU', 'Hulk', 'Iron Man']
+
+
+    list_b[1] = 10
+    print(list_a) #  ['Yash',23, True,'GEHU', 'Hulk', 'Iron Man']
+    print(list_b) # #  ['Yash',10, True,'GEHU', 'Hulk', 'Iron Man']
+
+
+    list_a = [1, 2, 3, 4, 5, 6 ,[ 7, 8, 9]]
+    list_b = list_a.copy()
+
+    list_b[6][1] = 18
+    print(list_a) # [1, 2, 3, 4, 5, 6 ,[ 7, 8, 9]]
+    print(list_b) # [1, 2, 3, 4, 5, 6 ,[ 7, 8, 9]]
+
+```
+>[!Note]
+- copy() creates shallow copy i.e in case of nested objects it copy reference of object
+- deepcopy() is used to created when we need to ensure complete independence between original and copy in case of nested list
+- ```python
+    import copy
+    list_a = [1, 2, 3, 4, 5, 6 ,[ 7, 8, 9]]
+    list_b = copy.deepcopy(list_a)
+
+    list_b[6][1] = 18
+    print(list_a)
+    print(list_b)
+    ```
 
