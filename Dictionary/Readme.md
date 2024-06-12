@@ -43,5 +43,5 @@ user_b[True] = "Yes"
 print(user_b)
 ```
 >[!Note]
-> * When using the dict() function to create a dictionary, the keys must be strings that are valid Python identifiers
-> *  If we want to use non-string keys, keys with spaces, or other types such as tuples, integers, or booleans, you cannot directly pass them as arguments to the dict() function.We need to add those keys separately
+> - When using the dict() function to create a dictionary, the keys must be strings that are valid Python identifiers
+> -  If we want to use non-string keys, keys with spaces, or other types such as tuples, integers, or booleans, you cannot directly pass them as arguments to the dict() function.We need to add those keys separately
