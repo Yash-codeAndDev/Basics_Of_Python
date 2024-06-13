@@ -40,8 +40,27 @@ user_b[3] = 8
 user_b[(1, 2)] = "tuple Key"
 user_b[True] = "Yes"
 
-print(user_b)
+print(user_b) # {'name': 'Yash', 'University': 'GEHU', 3: 8, (1, 2): 'tuple Key', True: 'Yes'}
+
+
+user_c = dict([
+    ('Name', 'Yash'),
+    (3, 8),
+    (True, "Yes"),
+    (None, "Nothing"),
+    ((1, 2), "tuple key")
+])
+
+print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tuple key'}
+
 ```
 >[!Note]
-> - When using the dict() function to create a dictionary, the keys must be strings that are valid Python identifiers
+> -  When using the dict() function to create a dictionary, the keys must be strings that are valid Python identifiers
 > -  If we want to use non-string keys, keys with spaces, or other types such as tuples, integers, or booleans, you cannot directly pass them as arguments to the dict() function.We need to add those keys separately
+
+
+## Mutablity Of Dictionary
+
+
+
+
