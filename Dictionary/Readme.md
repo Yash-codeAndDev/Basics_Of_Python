@@ -204,3 +204,11 @@ print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tu
 
         print(user_b) # {'name': 'Ayush', 'university': 'Gehu', 'Roll No': {'univ': 20112, 'stud id': 2001121}}
     ```
+
+* dict.fromkeys(iterable, value=None) -> Creates a new dictionary with keys from the specified iterable and values set to the specified value.
+    ```python
+        ls = [1, 2, 3]
+
+        user_A = dict.fromkeys(ls,33)
+        print(user_A) # {1: 33, 2: 33, 3: 33}
+    ```
