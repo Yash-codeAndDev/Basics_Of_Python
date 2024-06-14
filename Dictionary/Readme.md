@@ -183,3 +183,4 @@ print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tu
         print(user_a) # {'name': 'Yash Khati', 'university': 'GEHU', 'Roll_No': 2018877, False: 'No', 'Section': 'C'}
 
     ```
+* dict.copy() -> Returns a shallow copy of the dictionary.
