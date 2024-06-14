@@ -63,4 +63,45 @@ print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tu
 
 
 
+* Updation of Key-Value Pair
 
+    - user[key] = value -> if key exist value is updated and if it does not exist a new key-value pair is created
+
+    ```python
+        user_a = {
+        'name' : 'Yash Khati',
+        'university' : "GEHU",
+        'Roll_No' : 2018877,
+        (1,2) : "tuple Key",
+        True : "Yes",
+        }
+        user_a['Roll_No'] = 2018821 
+        print(user_a) # {'name': 'Yash Khati', 'university': 'GEHU', 'Roll_No': 2018821, (1, 2): 'tuple Key', True: 'Yes'}
+    ```
+    - update( pairs ) -> Updates multiple key-value pairs in the dictionary from another dictionary or iterable of key-value pairs.
+
+    ```python
+        user_a = {
+            'name' : 'Yash Khati',
+            'university' : "GEHU",
+            'Roll_No' : 2018877,
+            (1,2) : "tuple Key",
+            True : "Yes",
+        }
+
+        user_a.update( {True : "No", 'name' : "Ayush Rawat"} )
+        print(user_a) # {'name': 'Ayush Rawat', 'university': 'GEHU', 'Roll_No': 2018877, (1, 2): 'tuple Key', True: 'No'}
+
+
+
+        # updation using another dictionary
+        
+        user_b = {
+            "name" : "Yash",
+            "university" : "GEHU",
+            "Semester" : 8,
+        }
+
+        user_a.update(user_b)
+        print(user_a) # {'name': 'Yash', 'university': 'GEHU', 'Roll_No': 2018877, (1, 2): 'tuple Key', True: 'No', 'Semester' : 8}
+    ```
