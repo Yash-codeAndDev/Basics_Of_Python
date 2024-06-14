@@ -184,3 +184,23 @@ print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tu
 
     ```
 * dict.copy() -> Returns a shallow copy of the dictionary.
+    ```python
+        user_a = {
+        "name" : "Yash",
+        "university" : "Gehu",
+        "Roll No" : {
+                "univ" : 2018177,
+                "stud id" : 2001121
+            }
+        } 
+
+        user_b = user_a.copy()
+        print(user_b) # {'name': 'Yash', 'university': 'Gehu', 'Roll No': {'univ': 2018177, 'stud id': 2001121}}
+
+        user_b['name'] = 'Ayush'
+        user_b['Roll No']['univ'] = 20112
+
+        print(user_a) # {'name': 'Yash', 'university': 'Gehu', 'Roll No': {'univ': 20112, 'stud id': 2001121}}
+
+        print(user_b) # {'name': 'Ayush', 'university': 'Gehu', 'Roll No': {'univ': 20112, 'stud id': 2001121}}
+    ```
