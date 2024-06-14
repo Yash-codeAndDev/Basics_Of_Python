@@ -105,3 +105,81 @@ print(user_c) # {'Name': 'Yash', 3: 8, True: 'Yes', None: 'Nothing', (1, 2): 'tu
         user_a.update(user_b)
         print(user_a) # {'name': 'Yash', 'university': 'GEHU', 'Roll_No': 2018877, (1, 2): 'tuple Key', True: 'No', 'Semester' : 8}
     ```
+
+* dict.get(key, default=None) -> Returns the value for the specified key if the key is in the dictionary. If not, returns the default value.
+
+    ```python
+        user_a = {
+            'name' : 'Yash Khati',
+            'university' : "GEHU",
+            'Roll_No' : 2018877,
+            (1,2) : "tuple Key",
+            True : "Yes",
+        }
+
+        print(user_a.get('name'))
+
+        print(user_a.get('Section' , 'N/A'))
+    ```
+
+* get all keys, values and entries
+
+```python
+    user_a = {
+    'name' : 'Yash Khati',
+    'university' : "GEHU",
+    'Roll_No' : 2018877,
+    (1,2) : "tuple Key",
+    True : "Yes",
+    }
+
+    # get all keys : 
+    print(user_a.keys()) # dict_keys(['name', 'university', 'Roll_No', (1, 2), True])
+
+    # get all values : 
+    print(user_a.values()) # dict_values(['Yash Khati', 'GEHU', 2018877, 'tuple Key', 'Yes'])
+
+    # get all items : 
+    print(user_a.items())
+    # dict_items([('name', 'Yash Khati'), ('university', 'GEHU'), ('Roll_No', 2018877), ((1, 2), 'tuple Key'), (True, 'Yes')])
+```
+* dict.pop(key, default) -> Removes the specified key and returns the corresponding value. If the key is not found, returns the default value if provided; otherwise, raises a KeyError
+    ```python
+        user_a = {
+            'name' : 'Yash Khati',
+            'university' : "GEHU",
+            'Roll_No' : 2018877,
+            False : "No",
+        }
+
+        print( user_a.pop("name")) # Yash Khati
+
+        print(user_a.pop('Section', "No Available Value")) # No Available Value
+    ```
+
+* dict.popitem() -> Removes and returns a random (key, value) pair as a tuple. Raises a KeyError if the dictionary is empty.
+    ```python      
+        user_a = {
+            'name' : 'Yash Khati',
+            'university' : "GEHU",
+            'Roll_No' : 2018877,
+            False : "No",
+        }
+
+        print( user_a.popitem()) 
+    ```
+
+* dict.setdefault(key, default=None) -> Returns the value of the specified key. If the key does not exist, inserts the key with the specified default value.
+
+    ```python
+        user_a = {
+            'name' : 'Yash Khati',
+            'university' : "GEHU",
+            'Roll_No' : 2018877,
+            False : "No",
+        }
+        print(user_a.setdefault("name", "Ayush")) # Yash Khati
+        print(user_a.setdefault("Section", "C")) # C
+        print(user_a) # {'name': 'Yash Khati', 'university': 'GEHU', 'Roll_No': 2018877, False: 'No', 'Section': 'C'}
+
+    ```
